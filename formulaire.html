@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon Premier Formulaire</title>
+  </head>
+  <body>
+    <h1>Votre Avis Nous Intèresse</h1>
+    <table>
+      <tr>
+        <td>
+    <form>
+      <fieldset>
+       <legend>Information Personnelles</legend>
+       <ol>
+         <li>
+        <label for="Nom">Nom</label>
+        <input required type="text" id="Nom" name="Nom" />
+       </li>
+       <li>
+      <label for="Date" >Date de naissance</label>
+      <input required type="date" id="date" name="date"  />
+     </li>
+     <li>
+    <label for="url">Site</label>
+<input required pattern="(http/https)://([/w-]¸+\.)+[\w-]+(/[\w- ./?%&=]*)?" type="text"  id="url" name="url" placeholder="http://monsite.com" >
+   </li>
+   <li>
+  <label for="select">Emploi</label>
+  <select id="select">
+    <option>Etudiant</option>
+    <option>Administrateur Rèseau</option>
+    <option>Dèvloppeur web</option>
+    <option>Web designer</option>
+    <option>DevOps</option>
+      </select>
+ </li>
+ <li>
+<label for="number">Approx. Salaire annuel</label> <br>
+<input min="0" step="1000" required type="number" id="number" name="number"  placeholder="$"/>
+</li>
+       </ol>
+      </fieldset>
+  </form>
+  </td>
+<td>
+<form>
+  <fieldset>
+    <legend>Information de contact</legend>
+    <ol>
+    <li>
+   <label for="adresse1">Adresse ligne 1</label>
+   <br>
+   <input required type="text" id="adresse1" name="adresse1" />
+  </li>
+  <li>
+ <label for="adresse2">Adresse ligne 2</label>
+ <br>
+ <input required type="text" id="adresse2" name="adresse2" />
+</li>
+<li>
+<label for="select">Pays</label>
+<select id="select">
+ <option>Algèrie</option>
+ <option>Tunisie</option>
+ <option>Maroc</option>
+   </select>
+</li>
+<li>
+  <label for="tel">Tèl</label>
+  <input type="tel" id="tel"  placeholder="eg: +213 67...">
+</li>
+<li>
+<label for="email">Courriel</label>
+<input required type="email" id="email" name="email" />
+</li>
+</ol>
+  </fieldset>
+</form>
+</td>
+</tr>
+</table>
+<div>
+<h1>Prèfèrences</h1>
+<label for="color">Choisir une couleur</label>
+<input type="color" name="head" value="black">
+<br>
+<label for="range">Sur une èchelle de 1 à 10, quel est votre degrè d'enthousiasme pour  HTML5 ?</label>
+<input min="0" max="10" required type="range" name="range" value="range">
+<br>
+<input type="submit" value="Envoyer">
+</div>
+
+
+  </body>
+</html>
+<head>
+
+</head>
